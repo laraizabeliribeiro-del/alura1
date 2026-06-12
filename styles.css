@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #8B7355 0%, #D4A574 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    color: #2C1810;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.subtitle {
+    color: #5D4037;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+#monalisaCanvas {
+    display: block;
+    margin: 0 auto;
+    background: #F5DEB3;
+    border: 3px solid #8B7355;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    cursor: crosshair;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    #monalisaCanvas {
+        width: 100%;
+        height: auto;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    .container {
+        padding: 20px;
+    }
+}
